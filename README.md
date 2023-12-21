@@ -8,20 +8,24 @@ The program similuates the impact of coral bleaching due to a certain raise of t
 The program will:
 
 1. **getcoralcoord.py** : Read file containing position of Great Barrier Reef Marine Park ("*Marine_Park.json*") and exctract the coordinates located only in the Great Barrier reef
+   
    => Gives us ("*coral_coordinates.csv*")
 
 2. **Add_temperature.py** :
       a. Add dates on a new csv file going from 01/01/2018 to 31/12/2022 (it did not take under consideration 29/02/2020 since it was a leap year
       b. Add temperature from 16.000 to 30.000 to each date and going through 3625 lines (for each coral coordinates).The temperature followed a normal distribution (or Gaussian distribution) around 25.000
+   
    => Gives us "*temperature_data.csv*"
    
 3. **adjustement_temperature.c** : Add certain temperature on "*temperature_data.csv*" depending on the scenario chosen
+   
     => Gives us  ("*scenario1.csv*"),("*scenario2.csv*"),("*scenario3.csv*")
 
 4. **GetPDVfinal.c**:
       a. calculate the initial points of life varying randomly from 50 to 100
       b. calculate the final points of life by a series of calculation and function (hotspots, dhw, growth rate...)
       c. associtaion in a new file (one for each scenario) the initial points of life (PDV_ini) on a column and the final points of life (PDV) on another column
+   
    => Gives us  "*PDV_scenario1.csv*", "*PDV_scenario2.csv*", "*PDV_scenario3.csv*"
 
 
