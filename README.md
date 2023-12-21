@@ -13,8 +13,8 @@ The program will:
 
 2. **Add_temperature.py** :
 
-      a. Add dates on a new csv file going from 01/01/2018 to 31/12/2022 (it did not take under consideration 29/02/2020 since it was a leap year
-      b. Add temperature from 16.000 to 30.000 to each date and going through 3625 lines (for each coral coordinates).The temperature followed a normal distribution (or Gaussian distribution) around 25.000
+      a. Add dates on a new csv file going from 01/01/2018 to 31/12/2022 (it did not take under consideration 29/02/2020 since it was a leap year <br>
+      b. Add temperature from 16.000 to 30.000 to each date and going through 3625 lines (for each coral coordinates).The temperature followed a normal distribution (or Gaussian distribution) around 25.000 <br>
    
    => Gives us "*temperature_data.csv*"
    
@@ -24,18 +24,18 @@ The program will:
 
 4. **GetPDVfinal.c**:
    
-      a. calculate the initial points of life varying randomly from 50 to 100
-      b. calculate the final points of life by a series of calculation and function (hotspots, dhw, growth rate...)
-      c. associtaion in a new file (one for each scenario) the initial points of life (PDV_ini) on a column and the final points of life (PDV) on another column
+      a. calculate the initial points of life varying randomly from 50 to 100 <br>
+      b. calculate the final points of life by a series of calculation and function (hotspots, dhw, growth rate...) <br>
+      c. associtaion in a new file (one for each scenario) the initial points of life (PDV_ini) on a column and the final points of life (PDV) on another column <br>
    
    => Gives us  "*PDV_scenario1.csv*", "*PDV_scenario2.csv*", "*PDV_scenario3.csv*"
 
 
 5. **scenario1.py**, **scenario2.py** or **scenario3.py**:
    
-      a. It will associate to each points of life located in ("*PDV_scenario1.csv*"),("*PDV_scenario2.csv*"),("*PDV_scenario3.csv*") to a coral position (located in "*coral_coordinates.csv*")
-      b. It will plot dots representing the coral in the Great Barrier Reef in function of their health. The points are distinct by their colors.
-      c. (On top is the initial state and at the bottom is the final state)
+      a. It will associate to each points of life located in ("*PDV_scenario1.csv*"),("*PDV_scenario2.csv*"),("*PDV_scenario3.csv*") to a coral position (located in "*coral_coordinates.csv*") <br>
+      b. It will plot dots representing the coral in the Great Barrier Reef in function of their health. The points are distinct by their colors. <br>
+      c. (On top is the initial state and at the bottom is the final state) <br>
    
 6. **interface.py**: GUI Interface allows the user to choose their scenario by clicking on three different buttons. When clicking, it will execute scenario1.py, scenario2.py or scenario3.py
    
