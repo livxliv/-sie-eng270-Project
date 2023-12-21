@@ -57,9 +57,9 @@ Each inputs and outputs are listed here in function of the different steps expla
    Output: "*temperature_data.csv*"
    
 3. Input: "*temperature_data.csv*"
-   Output: "*scenario1.csv*", "*scenario2.csv*", "*scenario3.csv*"
+   Output: "*scenario1.csv*", "*scenario2.csv*", "*scenario3.csv*", "*scenario_past.csv*"
 
-4. Input:"*scenario1.csv*", "*scenario2.csv*", "*scenario3.csv*"
+4. Input:"*scenario1.csv*", "*scenario2.csv*", "*scenario3.csv*", "*scenario_past.csv*"
    Output: "*PDV_scenario1.csv*", "*PDV_scenario2.csv*", "*PDV_scenario3.csv*"
 
 5. Input: "*PDV_scenario1.csv*", "*PDV_scenario2.csv*", "*PDV_scenario3.csv*" , "*coral_coordinates.csv*"
@@ -95,7 +95,7 @@ To reproduce results in the report, those steps should be followed:
 1. Run **getcoralcoord.py** with input1 ("*Marine_Park.json*")
    -> Make sure that json and csv is imported : (import csv, import json)
 
-2.  Run **Add_temperature.py**
+2.  Run **Create_temp_file.py**
    -> Make sure that the library pandas is installed and random is imported : (import pandas as pd, import random)
 
 3. Compile **adjustement_temperature.c** by wrinting the line given above in the terminal
