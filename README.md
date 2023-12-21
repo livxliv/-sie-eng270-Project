@@ -68,7 +68,7 @@ Each inputs and outputs are listed here in function of the different steps expla
 
 ### Implementation details
 
-**For python**: you need to insall these library 
+**For python**: you need to insall these libraries 
 
 ```{bash}
 pip install geopandas numpy pandas matplotlib.pyplot
