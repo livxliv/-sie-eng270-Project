@@ -9,9 +9,9 @@ The program will:
 
 1. **getcoralcoord.py** : Read file containing position of Great Barrier Reef Marine Park ("*Marine_Park.json*") and exctract the coordinates located only in the Great Barrier reef
    
-   => Gives us ("*coral_coordinates.csv*")
+   => Gives us "*coral_coordinates.csv*"
 
-2. **Add_temperature.py** :
+2. **Create_temp_file.py** :
 
       a. Add dates on a new csv file going from 01/01/2018 to 31/12/2022 (it did not take under consideration 29/02/2020 since it was a leap year <br>
       b. Add temperature from 16.000 to 30.000 to each date and going through 3625 lines (for each coral coordinates).The temperature followed a normal distribution (or Gaussian distribution) around 25.000 <br>
@@ -20,7 +20,7 @@ The program will:
    
 3. **adjustement_temperature.c** : Add certain temperature on "*temperature_data.csv*" depending on the scenario chosen
    
-    => Gives us  ("*scenario1.csv*"),("*scenario2.csv*"),("*scenario3.csv*")
+    => Gives us  "*scenario1.csv*", "*scenario2.csv*", "*scenario3.csv*","*scenario_past.csv*"
 
 4. **GetPDVfinal.c**:
    
